@@ -1,0 +1,63 @@
+body {
+    /* Center clock in the center of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: rgb(43,43,43);
+}
+
+.clock {
+    /* Create clock circle */
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    border: solid 5px rgb(46, 46, 46);
+    background-color: white;
+    position: absolute;
+}
+
+#seconds-hand {
+    position: absolute;
+    height: 230px;
+    width: 2px;
+    background-color: rgb(43,43,43);
+    left: 249px;
+    bottom: 249px;
+    opacity: 50%;
+    /* Transform origin makes sec/min/hour line rotate from center of the clock */
+    transform-origin: 0% 100%;
+}
+
+#minutes-hand {
+    height: 200px;
+    width: 2px; 
+    background-color: rgb(43,43,43);
+    position: absolute;
+    left: 249px;
+    bottom: 249px;
+    /* Transform origin makes sec/min/hour line rotate from center of the clock */
+    transform-origin: 0% 100%;
+}
+
+#hours-hand {
+    height: 180px;
+    width: 4px;
+    background-color: rgb(43,43,43);
+    position: absolute;
+    left: 248px;
+    bottom: 248px;
+    /* Transform origin makes sec/min/hour line rotate from center of the clock */
+    transform-origin: 0% 100%;
+}
+
+#center {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 46);
+    position: absolute;
+    left: 245px;
+    bottom: 245px;
+}
